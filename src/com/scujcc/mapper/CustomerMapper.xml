@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scujcc.mapper.CustomerMapper">
+    <!-- 这个select返回的是一个装满Customer的List集合。
+         id为接口中的一个方法名。
+         所以，访问接口就是访问这里的mapper， 访问接口的方法就是访问这个配置文件的select（根据id而定）。
+    -->
+    <select id="selectCustomers" resultType="com.scujcc.domain.Customer">
+        SELECT CustomerID, CompanyName, ContactTitle, ContactName FROM Customers
+    </select>
+</mapper>
