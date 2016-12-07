@@ -6,6 +6,11 @@
     <!-- 加载根目录的db.properties文件 -->
     <properties resource="db.properties"></properties>
 
+    <typeAliases>
+        <!-- 给Customer起一个别名，方便后面来引用 -->
+        <typeAlias type="com.scujcc.domain.Customer" alias="Customer"></typeAlias>
+    </typeAliases>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"></transactionManager>
