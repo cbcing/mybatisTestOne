@@ -7,7 +7,8 @@
          id为接口中的一个方法名。
          所以，访问接口就是访问这里的mapper， 访问接口的方法就是访问这个配置文件的select（根据id而定）。
     -->
-    <select id="selectCustomers" resultType="com.scujcc.domain.Customer">
+    <!-- 这里的resultType＝"Customer"的Customer在Configuration.xml中使用<typeAliases>标签定义的别名 -->
+    <select id="selectCustomers" resultType="Customer">
         SELECT CustomerID, CompanyName, ContactTitle, ContactName FROM Customers
     </select>
 </mapper>
