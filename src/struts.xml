@@ -12,5 +12,8 @@
         <action name="queryOrders" class="com.scujcc.struts.actions.OrderAction">
             <result name="success">orders.jsp</result>
         </action>
+        <action name="queryCustomersById" class="com.scujcc.struts.actions.CustomerAction" method="queryCustomerById">
+            <result name="success">customers.jsp</result>
+        </action>
     </package>
 </struts>

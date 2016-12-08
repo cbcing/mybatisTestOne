@@ -13,6 +13,10 @@
   </head>
   <body>
     <a href="queryCustomers.action">Query Customers</a><br/>
-    <a href="queryOrders.action">Query Orders</a>
+    <a href="queryOrders.action">Query Orders</a><br/>
+    <form action="queryCustomersById.action" method="post">
+      <input type="text" name="customerID" value="CustomerID"/>
+      <input type="submit" value="submit"/>
+    </form>
   </body>
 </html>

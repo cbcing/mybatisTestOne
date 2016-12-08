@@ -20,6 +20,13 @@
         </configuration>
       </facet>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/ApplicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -32,5 +39,6 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.18-bin" level="project" />
     <orderEntry type="library" name="mybatis-3.4.1" level="project" />
     <orderEntry type="library" name="struts2" level="project" />
+    <orderEntry type="library" name="spring" level="project" />
   </component>
 </module>

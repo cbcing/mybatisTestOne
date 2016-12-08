@@ -11,6 +11,7 @@
           <element id="library" level="project" name="mybatis-3.4.1" />
           <element id="library" level="project" name="mysql-connector-java-5.1.18-bin" />
           <element id="library" level="project" name="struts2" />
+          <element id="library" level="project" name="spring" />
         </element>
       </element>
     </root>

@@ -12,6 +12,7 @@ import java.io.Reader;
  */
 public class MapperUtil {
 
+    //sqlSessionFactory可以创建sqlSession
     private static SqlSessionFactory sessionFactory;
     private static final String resource = "Configuration.xml";
 
@@ -19,6 +20,8 @@ public class MapperUtil {
         if (sessionFactory == null){
             try {
                 Reader reader = Resources.getResourceAsReader(resource);
+                //sqlSessionFactoryBuilder可以创建sqlSessionFactory
+                //读的文件是一个主配置文件加多个映射文件
                 sessionFactory = new SqlSessionFactoryBuilder().build(reader);
             } catch (IOException e) {
                 e.printStackTrace();

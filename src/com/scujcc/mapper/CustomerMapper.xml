@@ -11,4 +11,14 @@
     <select id="selectCustomers" resultType="Customer">
         SELECT CustomerID, CompanyName, ContactTitle, ContactName FROM Customers
     </select>
+
+    <select id="selectCustomersById" parameterType="String" resultType="Customer">
+        SELECT CustomerID, CompanyName, ContactTitle, ContactName
+        FROM Customers
+        WHERE CustomerID = #{customerID}
+    </select>
+
+    <select id="selectCustomersMap" resultMap="Customer">
+
+    </select>
 </mapper>
